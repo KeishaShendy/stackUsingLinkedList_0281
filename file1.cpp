@@ -52,3 +52,9 @@ public:
             cout << "Top value: " << top->data << endl;
         }
     }
+
+    // isEmpty operation: Check if the stack is empty
+    bool isEmpty() {
+        return top == NULL;  // Return true if the stack is empty (top is NULL)
+    }
+};
