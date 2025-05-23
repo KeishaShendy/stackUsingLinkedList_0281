@@ -31,3 +31,15 @@ public:
         top = newNode;               // Update the top pointer to point to the new node
         cout << "Pushed " << value << endl;
     }
+
+    // Pop operation: Remove the topmost element from the stack
+    void pop() {
+        if (isEmpty()) {
+            cout << "Stack is empty." << endl;
+        } else {
+            Node* temp = top;        // Create a temporary pointer to the top node
+            top = top->next;         // Update the top pointer to the next node
+            cout << "Popped value: " << temp->data << endl;
+            delete temp;             // Free the memory of the popped node
+        }
+    }
