@@ -58,3 +58,9 @@ public:
         return top == NULL;  // Return true if the stack is empty (top is NULL)
     }
 };
+
+int main() {
+    Stack stack;
+
+    int choice = 0;
+    int value;
