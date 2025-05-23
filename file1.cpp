@@ -43,3 +43,12 @@ public:
             delete temp;             // Free the memory of the popped node
         }
     }
+
+    // Peek/Top operation: Retrieve the value of the topmost element without removing it
+    void peek() {
+        if (top == NULL) {
+            cout << "Stack is empty." << endl;
+        } else {
+            cout << "Top value: " << top->data << endl;
+        }
+    }
