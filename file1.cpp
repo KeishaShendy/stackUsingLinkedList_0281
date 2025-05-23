@@ -22,3 +22,12 @@ public:
     Stack() {
         top = NULL;  // Initialize stack with NULL top pointer
     }
+
+    // Push operation: Insert an element onto the top of the stack
+    void push(int value) {
+        Node* newNode = new Node();  // Allocate memory for the new node
+        newNode->data = value;       // Assign the value to the new node
+        newNode->next = top;         // Set the next pointer of the new node to the current top
+        top = newNode;               // Update the top pointer to point to the new node
+        cout << "Pushed " << value << endl;
+    }
